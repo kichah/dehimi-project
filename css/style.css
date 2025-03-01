@@ -1,5 +1,14 @@
+:root {
+  --clr-primary-100: hsl(14, 100%, 80%);
+  --clr-primary-200: hsl(14, 100%, 70%);
+  --clr-primary-300: hsl(14, 100%, 60%);
+  --clr-primary-400: hsl(14, 100%, 43%);
+  --clr-primary-500: hsl(14, 100%, 20%);
+  --clr-youtube-100: hsl(219, 61%, 37%);
+}
+
 h1 {
-  color: #eee;
+  color: var(--clr-primary-100);
 }
 
 /*# sourceMappingURL=style.css.map */
