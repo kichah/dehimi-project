@@ -1,0 +1,4 @@
+@use '../abstract/' as *;
+h1 {
+  color: $main-color;
+}

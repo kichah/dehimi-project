@@ -1,0 +1,20 @@
+{
+  "name": "dehimi-mohammed",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch sass/main.scss css/style.css",
+    "live": "live-server",
+    "start": "npm-run-all --parallel live scss"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
