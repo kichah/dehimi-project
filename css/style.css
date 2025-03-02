@@ -5,10 +5,31 @@
   --clr-primary-400: hsl(14, 100%, 43%);
   --clr-primary-500: hsl(14, 100%, 20%);
   --clr-youtube-100: hsl(219, 61%, 37%);
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.563rem;
+  --fs-600: 2rem;
+  --fs-700: 3rem;
+  --fs-800: 3.052rem;
+}
+@media only screen and (min-width: 65em) {
+  :root {
+    --fs-300: 1rem;
+    --fs-400: 1.125rem;
+    --fs-500: 2rem;
+    --fs-600: 5rem;
+    --fs-700: 8rem;
+    --fs-800: 5rem;
+  }
 }
 
 h1 {
   color: var(--clr-primary-100);
+  font-size: var(--fs-700);
+}
+
+h2 {
+  font-size: var(--fs-600);
 }
 
 /*# sourceMappingURL=style.css.map */

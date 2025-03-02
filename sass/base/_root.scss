@@ -6,4 +6,17 @@
       --clr-#{$color}-#{$shades}: #{$values};
     }
   }
+  @each $screen-size, $font-size in $fonts {
+    @if$screen-size == small {
+      @each $size, $value in $font-size {
+        --fs-#{$size}: #{$value};
+      }
+    } @else {
+      @include mq(medium) {
+        @each $size, $value in $font-size {
+          --fs-#{$size}: #{$value};
+        }
+      }
+    }
+  }
 }
