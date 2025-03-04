@@ -1,2 +1,17 @@
+// base
 @use './base/root';
 @use './base/reset';
+@use './base/typography';
+
+//components
+@use './components/nav';
+@use './components/grid';
+@use './components/footer';
+
+// pages
+@use './pages/home';
+
+// sections
+@use './section/hero';
+
+// utilities

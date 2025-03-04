@@ -1,9 +1,16 @@
 @use '../abstract/' as *;
 
-h1 {
-  color: var(--clr-primary-100);
-  font-size: var(--fs-700);
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h2 {
-  font-size: var(--fs-600);
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
