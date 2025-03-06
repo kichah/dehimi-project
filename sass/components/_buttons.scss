@@ -1,0 +1,22 @@
+.shopping {
+  stroke: var(--clr-primary-300);
+  fill: none;
+  svg {
+    width: var(--fs-icon);
+    height: var(--fs-icon);
+  }
+  &:hover {
+    stroke: var(--clr-primary-500);
+  }
+}
+.search {
+  stroke: none;
+  svg {
+    fill: var(--clr-primary-300);
+    width: calc(#{var(--fs-icon)} - (0.11 *#{var(--fs-icon)}));
+    height: calc(#{var(--fs-icon)} - (0.11 *#{var(--fs-icon)}));
+    &:hover {
+      fill: var(--clr-primary-500);
+    }
+  }
+}

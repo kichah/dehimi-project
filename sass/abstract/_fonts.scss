@@ -6,13 +6,28 @@ $fonts: (
     600: 2rem,
     700: 3rem,
     800: 3.052rem,
+    icon: 14px,
   ),
   large: (
     300: 1rem,
     400: 1.125rem,
     500: 2rem,
-    600: 5rem,
-    700: 8rem,
-    800: 5rem,
+    600: 2.5rem,
+    700: 3rem,
+    800: 4rem,
+    icon: 1.75rem,
   ),
 );
+
+@font-face {
+  font-family: 'El Messiri';
+  src: url('/public/fonts/El_Messiri/ElMessiri-VariableFont_wght.ttf');
+  font-weight: 400 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Amiri';
+  src: url('/public/fonts/Amiri/Amiri-Regular.ttf');
+  font-weight: 400 700;
+  font-display: swap;
+}

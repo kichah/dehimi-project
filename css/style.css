@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "El Messiri";
+  src: url("/public/fonts/El_Messiri/ElMessiri-VariableFont_wght.ttf");
+  font-weight: 400 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amiri";
+  src: url("/public/fonts/Amiri/Amiri-Regular.ttf");
+  font-weight: 400 700;
+  font-display: swap;
+}
 :root {
   --clr-primary-100: hsl(165, 10%, 100%);
   --clr-primary-300: hsl(165, 15%, 95%);
@@ -17,15 +29,17 @@
   --fs-600: 2rem;
   --fs-700: 3rem;
   --fs-800: 3.052rem;
+  --fs-icon: 14px;
 }
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 40em) {
   :root {
     --fs-300: 1rem;
     --fs-400: 1.125rem;
     --fs-500: 2rem;
-    --fs-600: 5rem;
-    --fs-700: 8rem;
-    --fs-800: 5rem;
+    --fs-600: 2.5rem;
+    --fs-700: 3rem;
+    --fs-800: 4rem;
+    --fs-icon: 1.75rem;
   }
 }
 
@@ -46,10 +60,33 @@ a {
   color: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "El Messiri", sans-serif;
+}
+
+body {
+  font-family: "Amiri", sans-serif;
+}
+
+.heading-1 {
+  font-size: var(--fs-800);
+}
+
+.heading-2 {
+  font-size: var(--fs-700);
+  color: var(--clr-secondary-500);
+}
+
 header {
   background-color: var(--clr-secondary-300);
   justify-items: center;
-  height: 100px;
+  align-items: center;
+  height: fit-content;
+  padding: 0.8rem 0;
 }
 
 .nav {
@@ -57,7 +94,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
 }
 .nav-links {
   display: flex;
@@ -65,17 +101,63 @@ header {
   gap: 1rem;
   align-items: center;
   width: 50%;
-  font-size: 1.2rem;
+  font-size: var(--fs-300);
+  font-weight: 500;
 }
 .nav-link {
+  font-family: "El Messiri", sans-serif;
   color: var(--clr-primary-300);
 }
 .nav-link:hover {
   color: var(--clr-primary-500);
 }
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.shopping {
+  stroke: var(--clr-primary-300);
+  fill: none;
+}
+.shopping svg {
+  width: var(--fs-icon);
+  height: var(--fs-icon);
+}
+.shopping:hover {
+  stroke: var(--clr-primary-500);
+}
+
+.search {
+  stroke: none;
+}
+.search svg {
+  fill: var(--clr-primary-300);
+  width: calc(var(--fs-icon) - 0.11 * var(--fs-icon));
+  height: calc(var(--fs-icon) - 0.11 * var(--fs-icon));
+}
+.search svg:hover {
+  fill: var(--clr-primary-500);
+}
 
 .container {
   max-width: 1440px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background: rgba(0, 0, 0, 0.27); /* Purple overlay */
+  z-index: 1;
+}
+
+.section {
+  padding: 6rem 4rem;
 }
 
 .hero {
@@ -85,6 +167,7 @@ header {
   width: 100%;
   height: 90vh;
   object-fit: cover; /* Maintain aspect ratio */
+  mask-image: linear-gradient(to left, #000, #000);
 }
 .hero-content {
   width: max-content;
@@ -95,10 +178,10 @@ header {
   transform: translate(-50%, -50%);
   text-align: center;
   color: var(--clr-primary-300);
-  font-size: 3.5rem;
+  z-index: 2;
 }
 .hero-body {
-  font-size: 2rem;
+  font-size: var(--fs-500);
 }
 
 /*# sourceMappingURL=style.css.map */

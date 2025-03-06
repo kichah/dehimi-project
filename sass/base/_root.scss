@@ -12,7 +12,7 @@
         --fs-#{$size}: #{$value};
       }
     } @else {
-      @include mq(medium) {
+      @include mq(small) {
         @each $size, $value in $font-size {
           --fs-#{$size}: #{$value};
         }

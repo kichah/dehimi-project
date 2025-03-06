@@ -1,12 +1,15 @@
 // base
 @use './base/root';
 @use './base/reset';
+@use './base/base';
 @use './base/typography';
 
 //components
 @use './components/nav';
+@use './components/buttons';
 @use './components/grid';
 @use './components/footer';
+@use './components/categories';
 
 // pages
 @use './pages/home';
