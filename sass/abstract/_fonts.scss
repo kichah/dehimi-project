@@ -1,26 +1,41 @@
 $fonts: (
-  small: (
-    300: 1rem,
-    400: 1.125rem,
-    500: 1.563rem,
-    600: 2rem,
-    700: 3rem,
-    icon: 14px,
-  ),
-  large: (
-    //captions = 16
-    300: 1rem,
-    //body = 18
-    400: 1.125rem,
-    //h3 = 20
-    500: 1.25rem,
-    //h2 = 48
-    600: 3rem,
-    //h1 = 64
-    700: 4rem,
-    icon: 1.75rem,
-  ),
+  //480px above small
+  small:
+    (
+      300: 0.9rem,
+      400: 1rem,
+      500: 1.125rem,
+      600: 2rem,
+      700: 2.8rem,
+      icon: 14px,
+    ),
+  //480px above small
+  medium:
+    (
+      300: 0.9rem,
+      400: 1rem,
+      500: 1.125rem,
+      600: 2rem,
+      700: 3rem,
+      icon: 14px,
+    ),
+  //1040px above large
+  large:
+    (
+      //captions = 16
+      300: 1rem,
+      //body = 18
+      400: 1.125rem,
+      //h3 = 20
+      500: 1.25rem,
+      //h2 = 48
+      600: 3rem,
+      //h1 = 64
+      700: 4rem,
+      icon: 1.75rem
+    )
 );
+//when it is under the break points
 
 @font-face {
   font-family: 'El Messiri';

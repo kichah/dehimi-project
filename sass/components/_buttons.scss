@@ -48,5 +48,13 @@
     color: var(--clr-primary-300);
     padding: 0.5rem 0;
     margin-top: 1rem;
+    font-size: var(--fs-300);
   }
+}
+.menu {
+  display: none;
+  background-color: var(--clr-secondary-300);
+  color: var(--clr-primary-300);
+  border: none;
+  font-size: var(--fs-300);
 }

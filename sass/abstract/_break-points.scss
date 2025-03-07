@@ -1,10 +1,14 @@
 @use 'sass:map';
 
 $breakpoints: (
-  small: 40em,
-  medium: 65em,
+  small: 30em,
+  //480px
+  medium: 40em,
+  //640px
+  large: 65em,
+  //1040px
 );
-
+//when it is under the break points font change
 @mixin mq($key) {
   $size: map.get($breakpoints, $key);
   @media only screen and (min-width: $size) {

@@ -14,3 +14,18 @@ a {
   text-decoration: none;
   color: inherit;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'El Messiri', sans-serif;
+}
+p,
+li {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+[role='list'] {
+  list-style: none;
+}
