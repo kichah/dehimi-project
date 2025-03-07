@@ -28,17 +28,15 @@
   --fs-500: 1.563rem;
   --fs-600: 2rem;
   --fs-700: 3rem;
-  --fs-800: 3.052rem;
   --fs-icon: 14px;
 }
 @media only screen and (min-width: 40em) {
   :root {
     --fs-300: 1rem;
     --fs-400: 1.125rem;
-    --fs-500: 2rem;
-    --fs-600: 2.5rem;
-    --fs-700: 3rem;
-    --fs-800: 4rem;
+    --fs-500: 1.25rem;
+    --fs-600: 3rem;
+    --fs-700: 4rem;
     --fs-icon: 1.75rem;
   }
 }
@@ -70,22 +68,34 @@ h5 {
 
 body {
   font-family: "Amiri", sans-serif;
+  background-color: var(--clr-primary-300);
 }
 
 .heading-1 {
-  font-size: var(--fs-800);
-}
-
-.heading-2 {
   font-size: var(--fs-700);
-  color: var(--clr-secondary-500);
+  font-weight: 700;
+}
+.heading-2 {
+  font-size: var(--fs-600);
+  font-weight: 700;
+  color: var(--clr-secondary-300);
+}
+.heading-3 {
+  font-size: var(--fs-500);
+  font-weight: 600;
+  color: var(--clr-secondary-300);
+}
+.heading-4 {
+  font-size: var(--fs-400);
+  font-weight: 600;
+  color: var(--clr-secondary-300);
 }
 
 header {
   background-color: var(--clr-secondary-300);
   justify-items: center;
   align-items: center;
-  height: fit-content;
+  height: 10svh;
   padding: 0.8rem 0;
 }
 
@@ -118,6 +128,12 @@ header {
   gap: 1rem;
 }
 
+.logo {
+  width: auto;
+  height: 10vh;
+  object-fit: cover;
+}
+
 .shopping {
   stroke: var(--clr-primary-300);
   fill: none;
@@ -142,36 +158,115 @@ header {
   fill: var(--clr-primary-500);
 }
 
-.container {
-  max-width: 1440px;
+.btn {
+  cursor: pointer;
+  font-family: "El Messiri", sans-serif;
+}
+.btn-cta {
+  color: var(--clr-primary-300);
+  background-color: var(--clr-accent-300);
+  border: 1px solid var(--clr-primary-300);
+  font-size: var(--fs-400);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.25rem;
+}
+.btn-cta:hover {
+  background-color: var(--clr-accent-500);
+  transform: scale(1.01);
+}
+.btn-cta:active {
+  background-color: var(--clr-accent-100);
+}
+.btn-buy {
+  background-color: var(--clr-secondary-300);
+  display: block;
+  text-align: center;
+  color: var(--clr-primary-300);
+  padding: 0.5rem 0;
+  margin-top: 1rem;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+.wrapper {
+  max-inline-size: 1440px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.grid-auto-fill {
+  --grid-min-col-size: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+  gap: 1rem;
+}
+
+.grid-auto-fit {
+  --grid-min-col-size: 240px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+  gap: 1rem;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.category-image {
+  width: 150px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.card-image {
   width: 100%;
-  height: 90vh;
-  background: rgba(0, 0, 0, 0.27); /* Purple overlay */
-  z-index: 1;
+  object-fit: cover;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clump(4px, 12px);
+}
+.card .price-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card .price-regular {
+  color: #333;
+  font-size: var(--fs-400);
+  text-decoration: line-through;
+}
+.card .price-discounted {
+  color: var(--clr-accent-300);
+  font-size: var(--fs-400);
 }
 
 .section {
-  padding: 6rem 4rem;
+  padding: 6.3rem 0;
+  border-bottom: 3px solid var(--clr-accent-2-300);
 }
 
 .hero {
   position: relative;
 }
 .hero-image {
+  --background-img-brightness: 0.65;
+  --background-img-saturate: 1.25;
   width: 100%;
-  height: 90vh;
+  height: 90dvh;
   object-fit: cover; /* Maintain aspect ratio */
-  mask-image: linear-gradient(to left, #000, #000);
+  filter: brightness(var(--background-img-brightness)) saturate(var(--background-img-saturate));
 }
 .hero-content {
-  width: max-content;
-  max-width: 55%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -179,9 +274,85 @@ header {
   text-align: center;
   color: var(--clr-primary-300);
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 .hero-body {
   font-size: var(--fs-500);
+  margin-top: 0.5rem;
+}
+
+/* ADD this instead */
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  /* Let Swiper control the width */
+  height: auto; /* Only set height if needed */
+  box-sizing: border-box;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background: hsl(145, 37%, 26%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Arrow icon styling */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "" !important;
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  border-width: 2px 2px 0 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* Previous arrow rotation */
+.swiper-button-next::after {
+  top: 51%;
+  left: 55%;
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+/* Next arrow rotation */
+.swiper-button-prev::after {
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Hover states */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: hsl(145, 37%, 20%);
+  transform: scale(1.1);
+}
+
+/* Active state */
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  transform: scale(0.95);
+}
+
+/* Optional shadow */
+.swiper-button-prev,
+.swiper-button-next {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /*# sourceMappingURL=style.css.map */

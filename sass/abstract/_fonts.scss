@@ -5,16 +5,19 @@ $fonts: (
     500: 1.563rem,
     600: 2rem,
     700: 3rem,
-    800: 3.052rem,
     icon: 14px,
   ),
   large: (
+    //captions = 16
     300: 1rem,
+    //body = 18
     400: 1.125rem,
-    500: 2rem,
-    600: 2.5rem,
-    700: 3rem,
-    800: 4rem,
+    //h3 = 20
+    500: 1.25rem,
+    //h2 = 48
+    600: 3rem,
+    //h1 = 64
+    700: 4rem,
     icon: 1.75rem,
   ),
 );

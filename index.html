@@ -4,12 +4,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="/css/style.css" />
     <title>Dehimi Organic Store</title>
   </head>
   <body>
     <header>
-      <nav class="nav container">
+      <nav class="nav wrapper">
         <img class="logo" src="/public/img/Color = Dark.png"></img>
         <ul class="nav-links">
           <li class="nav-link"><a href="#">الصفحة الرئيسة</a></li>
@@ -30,9 +34,7 @@
               <path d="M2.083 2.083h4.334L9.32 16.59a2.167 2.167 0 0 0 2.167 1.744h10.53a2.166 2.166 0 0 0 2.166-1.744L25.917 7.5H7.5m4.333 16.25a1.083 1.083 0 1 1-2.166 0 1.083 1.083 0 0 1 2.166 0Zm11.917 0a1.083 1.083 0 1 1-2.167 0 1.083 1.083 0 0 1 2.167 0Z"  stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </a>
-       
-          
-        </div>
+      </div>
       </nav>
     </header>
     <main >
@@ -43,19 +45,252 @@
           class="hero-image"
           loading="lazy"
         />
-        <div class="overlay"></div>
 
-        <div class="hero-content">
-          <h1 class="heading-1">اختبر أفضل ما في الطبيعة.</h1>
-          <p class="hero-body">أطلق العنان لإمكانيات الشفاء التي تتمتع بها أعشابنا وزيوتنا الطبية المتميزة. جرب حلول العافية الطبيعية التي تعزز صحتك وحيويتك.</p>
+        <div class="hero-content wrapper">
+          <div class="hero-text">
+            <h1 class="heading-1">اختبر أفضل ما في الطبيعة.</h1>
+            <p class="hero-body">أطلق العنان لإمكانيات الشفاء التي تتمتع بها أعشابنا وزيوتنا الطبية المتميزة. جرب حلول العافية الطبيعية التي تعزز صحتك وحيويتك.</p>
+          </div>
+          <a href="#" class="btn btn-cta" aria-label="اكتشف المنتجات">
+              اكتشف المنتجاتنا الآن
+          </a>
         </div>
       </section>
       <section class="section">
-        <h2 class="heading-2">
-          تصفح الفئات
-        </h2>
-        <div class="category"></div>
+        <div class="wrapper">
+
+          <h2 class="heading-2">
+            تصفح الفئات
+          </h2>
+          <div class="grid-auto-fill">
+            <div class="category">
+              <a href="">
+                <img src="https://matjrah.online/images/1325/image/cache/catalog/1701712751-1626512904-Powder-180x150h-400x300w.png" alt="Herbs" class="category-image" />
+              </a>
+              <h3 class="heading-3">الأعشاب</h3>
+            </div>
+            <div class="category">
+              <a href="">
+                <img src="https://matjrah.online/images/1325/image/cache/catalog/1701712751-1626512904-Powder-180x150h-400x300w.png" alt="Herbs" class="category-image" />
+              </a>
+              <h3 class="heading-3">الزيوت</h3>
+            </div>
+            <div class="category">
+              <a href="">
+                <img src="https://matjrah.online/images/1325/image/cache/catalog/1701712751-1626512904-Powder-180x150h-400x300w.png" alt="Herbs" class="category-image" />
+              </a>
+              <h3 class="heading-3">الشاي</h3>
+            </div>
+            <div class="category">
+              <a href="">
+                <img src="https://matjrah.online/images/1325/image/cache/catalog/1701712751-1626512904-Powder-180x150h-400x300w.png" alt="Herbs" class="category-image" />
+              </a>
+              <h3 class="heading-3">تمور</h3>
+            </div>
+            <div class="category">
+              <a href="">
+                <img src="https://matjrah.online/images/1325/image/cache/catalog/1701712751-1626512904-Powder-180x150h-400x300w.png" alt="Herbs" class="category-image" />
+              </a>
+              <h3 class="heading-3">ادوات تجميلية</h3>
+            </div>
+            <div class="category">
+              <a href="">
+                <img src="https://matjrah.online/images/1325/image/cache/catalog/1701712751-1626512904-Powder-180x150h-400x300w.png" alt="Herbs" class="category-image" />
+              </a>
+              <h3 class="heading-3">بهارات</h3>
+            </div>
+
+        </div>
+      </div>
       </section>
-    </main>
+      <section class="section best-products">
+        <div class="wrapper">
+          <h2 class="heading-2">
+            افضل منتجاتنا
+          </h2>
+          <div class="swiper pagination">
+            <div class="swiper-wrapper">
+              <div class="card swiper-slide">
+                <img src="/public/img/Placeholder Image.png" alt="Product name" class="card-image">
+                
+                <div class="card-content">
+                  <!-- Product Title -->
+                  <h3 class="heading-4">اسم المنتج</h3>
+                  <!-- Product Specification/Caption -->
+                  <!-- Price Container -->
+                  <div class="price-container">
+                    <!-- Discounted Price (conditionally shown) -->
+                      <!-- Regular Price -->
+                      <span class="price-regular">
+                        1100 د.ج
+                      </span>
+                      <span class="price-discounted">
+                        700 د.ج
+                      </span>
+                  </div>
+                </div>
+                <a href="" class="btn btn-buy">أضف إلى السلة</a>
+             </div>
+              <div class="card swiper-slide">
+                <img src="/public/img/Placeholder Image.png" alt="Product name" class="card-image">
+                
+                <div class="card-content">
+                  <!-- Product Title -->
+                  <h3 class="heading-4">اسم المنتج</h3>
+                  <!-- Product Specification/Caption -->
+                  <!-- Price Container -->
+                  <div class="price-container">
+                    <!-- Discounted Price (conditionally shown) -->
+                      <!-- Regular Price -->
+                      <span class="price-regular">
+                        1100 د.ج
+                      </span>
+                      <span class="price-discounted">
+                        700 د.ج
+                      </span>
+                  </div>
+                </div>
+                <a href="" class="btn btn-buy">أضف إلى السلة</a>
+             </div>
+              <div class="card swiper-slide">
+                <img src="/public/img/Placeholder Image.png" alt="Product name" class="card-image">
+                
+                <div class="card-content">
+                  <!-- Product Title -->
+                  <h3 class="heading-4">اسم المنتج</h3>
+                  <!-- Product Specification/Caption -->
+                  <!-- Price Container -->
+                  <div class="price-container">
+                    <!-- Discounted Price (conditionally shown) -->
+                      <!-- Regular Price -->
+                      <span class="price-regular">
+                        1100 د.ج
+                      </span>
+                      <span class="price-discounted">
+                        700 د.ج
+                      </span>
+                  </div>
+                </div>
+                <a href="" class="btn btn-buy">أضف إلى السلة</a>
+             </div>
+              <div class="card swiper-slide">
+                <img src="/public/img/Placeholder Image.png" alt="Product name" class="card-image">
+                
+                <div class="card-content">
+                  <!-- Product Title -->
+                  <h3 class="heading-4">اسم المنتج</h3>
+                  <!-- Product Specification/Caption -->
+                  <!-- Price Container -->
+                  <div class="price-container">
+                    <!-- Discounted Price (conditionally shown) -->
+                      <!-- Regular Price -->
+                      <span class="price-regular">
+                        1100 د.ج
+                      </span>
+                      <span class="price-discounted">
+                        700 د.ج
+                      </span>
+                  </div>
+                </div>
+                <a href="" class="btn btn-buy">أضف إلى السلة</a>
+             </div>
+              <div class="card swiper-slide">
+                <img src="/public/img/Placeholder Image.png" alt="Product name" class="card-image">
+                
+                <div class="card-content">
+                  <!-- Product Title -->
+                  <h3 class="heading-4">اسم المنتج</h3>
+                  <!-- Product Specification/Caption -->
+                  <!-- Price Container -->
+                  <div class="price-container">
+                    <!-- Discounted Price (conditionally shown) -->
+                      <!-- Regular Price -->
+                      <span class="price-regular">
+                        1100 د.ج
+                      </span>
+                      <span class="price-discounted">
+                        700 د.ج
+                      </span>
+                  </div>
+                </div>
+                <a href="" class="btn btn-buy">أضف إلى السلة</a>
+             </div>
+              <div class="card swiper-slide">
+                <img src="/public/img/Placeholder Image.png" alt="Product name" class="card-image">
+                
+                <div class="card-content">
+                  <!-- Product Title -->
+                  <h3 class="heading-4">اسم المنتج</h3>
+                  <!-- Product Specification/Caption -->
+                  <!-- Price Container -->
+                  <div class="price-container">
+                    <!-- Discounted Price (conditionally shown) -->
+                      <!-- Regular Price -->
+                      <span class="price-regular">
+                        1100 د.ج
+                      </span>
+                      <span class="price-discounted">
+                        700 د.ج
+                      </span>
+                  </div>
+                </div>
+                <a href="" class="btn btn-buy">أضف إلى السلة</a>
+             </div>
+              <div class="card swiper-slide">
+                <img src="/public/img/Placeholder Image.png" alt="Product name" class="card-image">
+                
+                <div class="card-content">
+                  <!-- Product Title -->
+                  <h3 class="heading-4">اسم المنتج</h3>
+                  <!-- Product Specification/Caption -->
+                  <!-- Price Container -->
+                  <div class="price-container">
+                    <!-- Discounted Price (conditionally shown) -->
+                      <!-- Regular Price -->
+                      <span class="price-regular">
+                        1100 د.ج
+                      </span>
+                      <span class="price-discounted">
+                        700 د.ج
+                      </span>
+                  </div>
+                </div>
+                <a href="" class="btn btn-buy">أضف إلى السلة</a>
+             </div>
+              <div class="card swiper-slide">
+                <img src="/public/img/Placeholder Image.png" alt="Product name" class="card-image">
+                
+                <div class="card-content">
+                  <!-- Product Title -->
+                  <h3 class="heading-4">اسم المنتج</h3>
+                  <!-- Product Specification/Caption -->
+                  <!-- Price Container -->
+                  <div class="price-container">
+                    <!-- Discounted Price (conditionally shown) -->
+                      <!-- Regular Price -->
+                      <span class="price-regular">
+                        1100 د.ج
+                      </span>
+                      <span class="price-discounted">
+                        700 د.ج
+                      </span>
+                  </div>
+                </div>
+                <a href="" class="btn btn-buy">أضف إلى السلة</a>
+             </div>
+
+            </div>
+            <div class="swiper-button-prev" aria-label="Previous slide"></div>
+            <div class="swiper-button-next" aria-label="Next slide"></div>
+
+          
+          </div>
+        </div>
+      </section>
+      
+          </main>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="src/script.js"></script>
+
   </body>
 </html>

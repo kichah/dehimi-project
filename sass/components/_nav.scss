@@ -2,7 +2,7 @@ header {
   background-color: var(--clr-secondary-300);
   justify-items: center;
   align-items: center;
-  height: fit-content;
+  height: 10svh;
   padding: 0.8rem 0;
 }
 .nav {
@@ -34,4 +34,10 @@ header {
     justify-content: center;
     gap: 1rem;
   }
+}
+
+.logo {
+  width: auto;
+  height: 10vh;
+  object-fit: cover;
 }

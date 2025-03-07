@@ -1,0 +1,68 @@
+/* ADD this instead */
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  /* Let Swiper control the width */
+  height: auto; /* Only set height if needed */
+  box-sizing: border-box;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background: hsl(145, 37%, 26%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Arrow icon styling */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '' !important;
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  border-width: 2px 2px 0 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* Previous arrow rotation */
+.swiper-button-next::after {
+  top: 51%;
+  left: 55%;
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+/* Next arrow rotation */
+.swiper-button-prev::after {
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Hover states */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: hsl(145, 37%, 20%);
+  transform: scale(1.1);
+}
+
+/* Active state */
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  transform: scale(0.95);
+}
+
+/* Optional shadow */
+.swiper-button-prev,
+.swiper-button-next {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}

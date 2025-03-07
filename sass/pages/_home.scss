@@ -1,12 +1,4 @@
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90vh;
-  background: rgba($color: #000000, $alpha: 0.27); /* Purple overlay */
-  z-index: 1;
-}
 .section {
-  padding: 6rem 4rem;
+  padding: 6.3rem 0;
+  border-bottom: 3px solid var(--clr-accent-2-300);
 }
