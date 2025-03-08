@@ -119,6 +119,49 @@ body {
   font-size: var(--fs-400);
 }
 
+header {
+  background-color: var(--clr-secondary-300);
+  justify-items: center;
+  align-items: center;
+  height: 10svh;
+  padding: 0.8rem 0;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+  width: 50%;
+  font-size: var(--fs-300);
+  font-weight: 500;
+}
+.nav-link {
+  font-family: "El Messiri", sans-serif;
+  color: var(--clr-primary-300);
+}
+.nav-link:hover {
+  color: var(--clr-primary-500);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: auto;
+  height: 10vh;
+  object-fit: cover;
+}
+
 .shopping {
   stroke: var(--clr-primary-300);
   fill: none;
@@ -249,40 +292,6 @@ body {
   border-bottom: 3px solid var(--clr-accent-2-300);
 }
 
-body {
-  background-color: var(--clr-secondary-300);
-}
-
-header {
-  background-color: var(--clr-secondary-300);
-  color: var(--clr-primary-300);
-}
-
-.flex {
-  display: flex;
-  gap: 1rem;
-}
-
-.logo {
-  margin: 2rem;
-}
-
-.primary-header {
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media (max-width: 35em) {
-  .primary-navigation {
-    gap: 3rem;
-    position: fixed;
-    inset: 0 0 0 30%;
-    flex-direction: column;
-    padding: min(30vh, 10rem) 2rem;
-    background-color: hsla(0, 0%, 100%, 0.1);
-    backdrop-filter: blur(1rem);
-  }
-}
 .hero {
   position: relative;
 }
