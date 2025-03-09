@@ -21,18 +21,19 @@
   </head>
   <body>
     <header class="header">
-      <div class="wrapper flex">
+      <div class=" flex">
       <a href="#" class="logo">
         <img class="logo" src="/public/img/Color = Dark.png"></img>
       </a>
-      <label for="" class="icons">
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <!-- <i class="bx bx-x" id="close-icon" style="color: #ffffff"></i> -->
-      </label>
-      <nav class="navbar">
+      <button aria-expanded="false" class="icons" aria-controls="primary-navigation">
+        <span class="sr-only">Menu</span>
+        <i class="bx bx-menu " id="menu-icon"></i>
+        <i class="bx bx-x hidden" id="close-icon"></i>
+      </button>
+      <nav class="navbar hide" id="primary-navigation" >
         <ul class="nav-links">
           <li>
-            <a href="#">الصفحة الرئيسة</a>
+            <a href="pages.html">الصفحة الرئيسة</a>
           </li>
           <li>
             <a href="#">المتجر</a>
@@ -46,9 +47,8 @@
         </ul>
       </nav>
       <div class="nav-actions">
-        <a href="#" class="search">
-          <i class='bx bx-search-alt-2' ></i>     
-        </a>  
+        <a href="pages.html" class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>        </a>  
         <a href="#" class="shopping">
           <i class='bx bx-cart'></i>
         </a>

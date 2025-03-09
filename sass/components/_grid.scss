@@ -4,20 +4,21 @@
   padding-inline: 1rem;
 }
 .grid-auto-fill {
-  --grid-min-col-size: 200px;
+  --grid-min-col-size: 150px;
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
     minmax(min(var(--grid-min-col-size), 100%), 1fr)
   );
-  gap: 1rem;
+  gap: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: start;
+  height: max-content;
 }
-.grid-auto-fit {
-  --grid-min-col-size: 240px;
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(min(var(--grid-min-col-size), 100%), 1fr)
-  );
-  gap: 1rem;
+@media (max-width: 660px) {
+  .grid-auto-fill {
+    --grid-min-col-size: 33% - 1rem;
+    gap: min(1rem, 5%);
+  }
 }
