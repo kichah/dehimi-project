@@ -1,12 +1,16 @@
 <!-- here about us and other pages mark up -->
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
     <script
@@ -16,30 +20,66 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="primary-header flex">
-      <div>
+    <header class="header">
+      <div class="wrapper flex">
+      <a href="#" class="logo">
         <img class="logo" src="/public/img/Color = Dark.png"></img>
-      </div>
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-         <span class="sr-only">Menu</span> 
-      </button>
-      <nav>
-        <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
+      </a>
+      <label for="" class="icons">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <!-- <i class="bx bx-x" id="close-icon" style="color: #ffffff"></i> -->
+      </label>
+      <nav class="navbar">
+        <ul class="nav-links">
           <li>
-            <a href="#"> home </a>
+            <a href="#">الصفحة الرئيسة</a>
           </li>
           <li>
-            <a href="#"> Crew </a>
+            <a href="#">المتجر</a>
           </li>
           <li>
-            <a href="#"> about us </a>
+            <a href="#">من نحن</a>
           </li>
           <li>
-            <a href="#"> tech </a>
+            <a href="#">إتصل بنا</a>
           </li>
         </ul>
       </nav>
+      <div class="nav-actions">
+        <a href="#" class="search">
+          <i class='bx bx-search-alt-2' ></i>     
+        </a>  
+        <a href="#" class="shopping">
+          <i class='bx bx-cart'></i>
+        </a>
+      </div>
+    </div>
     </header>
+    <main>
+      <section class="hero">
+        <img
+          src="/public/img/download.jpg "
+          alt="Students learning online"
+          class="hero-image"
+          loading="lazy"
+        />
+        <div class="wrapper">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="heading-1">اختبر أفضل ما في الطبيعة.</h1>
+              <p class="hero-body">
+                أطلق العنان لإمكانيات الشفاء التي تتمتع بها أعشابنا وزيوتنا
+                الطبية المتميزة. جرب حلول العافية الطبيعية التي تعزز صحتك
+                وحيويتك.
+              </p>
+            </div>
+            <a href="#" class="btn btn-cta" aria-label="اكتشف المنتجات">
+              اكتشف المنتجاتنا الآن
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="src/script.js"></script>
   </body>

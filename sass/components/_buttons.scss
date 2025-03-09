@@ -1,25 +1,3 @@
-.shopping {
-  stroke: var(--clr-primary-300);
-  fill: none;
-  svg {
-    width: var(--fs-icon);
-    height: var(--fs-icon);
-  }
-  &:hover {
-    stroke: var(--clr-primary-500);
-  }
-}
-.search {
-  stroke: none;
-  svg {
-    fill: var(--clr-primary-300);
-    width: calc(#{var(--fs-icon)} - (0.11 *#{var(--fs-icon)}));
-    height: calc(#{var(--fs-icon)} - (0.11 *#{var(--fs-icon)}));
-    &:hover {
-      fill: var(--clr-primary-500);
-    }
-  }
-}
 .btn {
   cursor: pointer;
   font-family: 'El Messiri', sans-serif;
@@ -50,11 +28,4 @@
     margin-top: 1rem;
     font-size: var(--fs-300);
   }
-}
-.menu {
-  display: none;
-  background-color: var(--clr-secondary-300);
-  color: var(--clr-primary-300);
-  border: none;
-  font-size: var(--fs-300);
 }

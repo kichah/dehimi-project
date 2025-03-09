@@ -1,5 +1,5 @@
 $fonts: (
-  //480px above small
+  // small is above 480px and under 800px
   small:
     (
       300: 0.9rem,
@@ -7,9 +7,9 @@ $fonts: (
       500: 1.125rem,
       600: 2rem,
       700: 2.8rem,
-      icon: 14px,
+      icon: 1.7rem,
     ),
-  //480px above small
+  //medium above 800px under 1040px
   medium:
     (
       300: 0.9rem,
@@ -17,9 +17,9 @@ $fonts: (
       500: 1.125rem,
       600: 2rem,
       700: 3rem,
-      icon: 14px,
+      icon: 1.7rem,
     ),
-  //1040px above large
+  //1040px and above large
   large:
     (
       //captions = 16
