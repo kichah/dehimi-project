@@ -1,4 +1,13 @@
 .section {
   padding: 6.3rem 0;
+}
+section {
   border-bottom: 3px solid var(--clr-accent-2-300);
+}
+.ads {
+  & div {
+    background-color: red;
+    height: 50vh;
+    width: 100%;
+  }
 }

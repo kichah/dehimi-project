@@ -104,6 +104,7 @@ body {
   font-size: var(--fs-600);
   font-weight: 700;
   color: var(--clr-secondary-300);
+  margin-bottom: clamp(1.5rem, 2.5vw, 2rem);
 }
 .heading-3 {
   font-size: var(--fs-500);
@@ -276,6 +277,11 @@ i {
     gap: min(1rem, 5%);
   }
 }
+.badges {
+  display: grid;
+  grid-template-columns: repeat(3, fr);
+}
+
 .category {
   display: flex;
   flex-direction: column;
@@ -322,7 +328,16 @@ i {
 
 .section {
   padding: 6.3rem 0;
+}
+
+section {
   border-bottom: 3px solid var(--clr-accent-2-300);
+}
+
+.ads div {
+  background-color: red;
+  height: 50vh;
+  width: 100%;
 }
 
 .hero {

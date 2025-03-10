@@ -22,3 +22,8 @@
     gap: min(1rem, 5%);
   }
 }
+
+.badges {
+  display: grid;
+  grid-template-columns: repeat(3, fr);
+}
