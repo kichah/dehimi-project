@@ -1,6 +1,7 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.product-slider', {
   slidesPerView: 2,
   spaceBetween: 8, // Add space between slides
+  loop: true,
   breakpoints: {
     // Responsive breakpoints
     320: {
@@ -20,6 +21,28 @@ const swiper = new Swiper('.swiper', {
     1040: {
       // when window width is >= 768px
       slidesPerView: 5,
+      spaceBetween: 20,
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+const swiper2 = new Swiper('.testimonial', {
+  slidesPerView: 1,
+  spaceBetween: 8, // Add space between slides
+  breakpoints: {
+    // Responsive breakpoints
+    800: {
+      // when window width is >= 320px
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1040: {
+      // when window width is >= 768px
+      slidesPerView: 2,
       spaceBetween: 20,
     },
   },
