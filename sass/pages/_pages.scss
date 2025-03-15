@@ -1,0 +1,22 @@
+.page {
+  min-height: 50svh;
+  padding: clamp(3rem, 10%, 5rem) 0;
+  &-title {
+    border-bottom: 1px solid var(--clr-accent-2-300);
+    h1 {
+      font-size: var(--fs-600);
+      color: var(--clr-secondary-300);
+    }
+  }
+  &-content {
+    padding: clamp(1.5rem, 5%, 2.5rem) 0;
+    p {
+      font-size: var(--fs-500);
+    }
+  }
+}
+@media (max-width: 65em) {
+  .page-title {
+    margin-inline: 1rem;
+  }
+}

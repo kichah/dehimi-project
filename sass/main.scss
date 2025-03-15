@@ -16,9 +16,13 @@
 @use './pages/home';
 @use './pages/pages';
 @use './pages/product-page';
+@use './pages/category-page';
 
 // sections
 @use './section/hero';
 
-// utilities
+//agents
+@use './agents/swiper-bundle.min.css';
 @use './agents/swiper';
+
+// utilities

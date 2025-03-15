@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--clr-secondary-300);
-  padding: 5rem 0 2.5rem 0;
+  padding: clamp(3.5rem, 10%, 5rem) 0 clamp(1.75rem, 5%, 2.5rem) 0;
   color: var(--clr-primary-300);
   font-size: var(--fs-300);
   &-wrapper {

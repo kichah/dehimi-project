@@ -4,17 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
-<link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="https://kit.fontawesome.com/c036ef1898.js" crossorigin="anonymous"></script>
-    <title>Dehimi Organic Store</title>
+    <title>Dehimi Organic Store - Pages</title>
   </head>
   <body>
     <header class="header">
@@ -24,8 +16,8 @@
       </a>
       <button aria-expanded="false" class="icons" aria-controls="primary-navigation">
         <span class="sr-only">Menu</span>
-        <i class="bx bx-menu " id="menu-icon"></i>
-        <i class="bx bx-x hidden" id="close-icon"></i>
+        <i class="fa-solid fa-bars"></i>        
+        <i class="fa-solid fa-x hidden"></i>     
       </button>
       <nav class="navbar hide" id="primary-navigation" >
         <ul class="nav-links">
@@ -51,9 +43,17 @@
           <i class="fa-solid fa-cart-shopping"></i>        </a>
       </div>
     </header>
-   <main>
-    <h1>من نحن:</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nemo adipisci cum culpa assumenda fugiat quasi sunt pariatur porro repellat animi blanditiis, esse sit facilis qui. Praesentium quis fugit explicabo ratione, laborum accusamus dolores libero suscipit deserunt eius porro quaerat sint sunt repellendus at. Exercitationem architecto officiis mollitia voluptate atque.</p>
+   <main class="page">
+     <div class="page-title">
+    <div class="wrapper">
+      <h1>من نحن:</h1>
+    </div>
+    </div>
+    <div class="wrapper">
+      <div class="page-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nemo adipisci cum culpa assumenda fugiat quasi sunt pariatur porro repellat animi blanditiis, esse sit facilis qui. Praesentium quis fugit explicabo ratione, laborum accusamus dolores libero suscipit deserunt eius porro quaerat sint sunt repellendus at. Exercitationem architecto officiis mollitia voluptate atque.</p>
+      </div>
+    </div>
    </main>
     <footer class="footer">
       <div class="wrapper">
@@ -94,8 +94,7 @@
         <div class="rights">©2025. All rights reserved.</div>
       </div>
     </footer>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="src/script.js"></script>
+    <script type="module" src="src/script.js"></script>
   
   </body>
 </html>

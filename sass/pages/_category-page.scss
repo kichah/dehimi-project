@@ -1,0 +1,8 @@
+.category-page {
+  padding: clamp(5rem, 10%, 6.5rem) 0;
+}
+@media (min-width: 65em) {
+  .category-page {
+    padding: clamp(5rem, 10%, 6.5rem) 2rem;
+  }
+}
