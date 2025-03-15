@@ -4,21 +4,19 @@
   padding-inline: 1rem;
 }
 .grid-auto-fill {
-  --grid-min-col-size: 150px;
+  --grid-min-col-size: 100px;
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(min(var(--grid-min-col-size), 100%), 1fr)
+    minmax(min(var(--grid-min-col-size), 100%), 150px)
   );
-  gap: 3rem;
+  gap: clamp(0.8rem, 4%, 3rem);
   text-align: center;
-  justify-content: center;
   align-items: start;
-  height: max-content;
 }
-@media (max-width: 660px) {
+@media (max-width: 50em) {
   .grid-auto-fill {
-    --grid-min-col-size: 33% - 1rem;
-    gap: min(1rem, 5%);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }

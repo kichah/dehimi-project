@@ -1,5 +1,5 @@
 .section {
-  padding: 6.3rem 0;
+  padding: clamp(5rem, 12%, 6.3rem) 0;
 }
 section {
   border-bottom: 3px solid var(--clr-accent-2-300);
@@ -26,7 +26,8 @@ section {
   align-items: center;
   text-align: center;
   & p {
-    font-size: var(--fs-500);
+    color: var(--clr-secondary-300);
+    font-size: var(--fs-badge);
   }
 }
 

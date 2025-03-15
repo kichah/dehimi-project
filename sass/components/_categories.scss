@@ -5,8 +5,10 @@
   align-items: center;
   gap: 0.5rem;
   &-image {
-    width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+  }
+  a {
+    width: clamp(50px, 100%, 150px);
   }
 }
