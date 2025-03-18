@@ -1,4 +1,30 @@
 .product-page {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  --gap: 4rem;
+  grid-template-columns: repeat(2, minmax(calc(50% - var(--gap)), 1fr));
+  padding: clamp(5rem, 12%, 6.3rem) 1rem;
+  gap: var(--gap);
+  h1 {
+    margin-bottom: 0;
+  }
+  &_description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &_image {
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+    gap: 1rem;
+    .main {
+      aspect-ratio: 3/2.1;
+    }
+  }
+}
+
+.product-description {
+  & > h2 {
+    font-size: var(--fs-550);
+  }
 }

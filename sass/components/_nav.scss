@@ -77,7 +77,7 @@ i {
   }
   .hide {
     opacity: 0;
-    z-index: -10;
+    z-index: -10 !important;
   }
   .hidden {
     display: none !important;

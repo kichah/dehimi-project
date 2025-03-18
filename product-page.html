@@ -8,12 +8,8 @@
   rel="stylesheet"
   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 />
-<link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="https://kit.fontawesome.com/c036ef1898.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/c036ef1898.js" crossorigin="anonymous"></script> -->
     <title>Dehimi Organic Store</title>
   </head>
   <body>
@@ -52,10 +48,11 @@
       </div>
     </header>
    <main >
-    <div class="wrapper product-page">
-      <div class="form">
-        <h1>شاي البابونج</h1>
-        <p>شاي البابونج المضادة للأكسدةولديه تأثيراً وقائياً ضد الأمراض المختلفة مثل أمراض القلب والأوعية الدموية</p>
+    <div class="wrapper">
+    <section class="product-page">
+      <div class="product-page_description">
+        <h1 class="heading-2">شاي البابونج</h1>
+        <p class="product-caption">شاي البابونج المضادة للأكسدةولديه تأثيراً وقائياً ضد الأمراض المختلفة مثل أمراض القلب والأوعية الدموية</p>
         <!-- Form -->
         <form class="form" action="submit">
           <h3 class="form-heading">إملئ الأسفل للطلب</h3>
@@ -77,24 +74,61 @@
             
               <select id="city" name="city" disabled required>
               <option value="">البلدية</option>
-            </select>
+              </select>
             </div>
-            <span class="total_price">السعر: <span class="total">1500</span> دج</span>
+          </div>
+          <div class="form-group">
             <div class="form-order">
-              <div class="order">
-                <div class="btn-number"><i class="fa fa-plus"></i></div>
-                <input tabindex="-1" id="order_size" type="number" max="10" min="1" value="1">
-                <div class="btn-number"><i class="fa fa-minus"></i></div>
-              </div>
-              <button class="btn btn-submit" type="submit">أطلب الآن</button>
+                <div class="order">
+                  <div class="btn-number">+</div>
+                  <input tabindex="-1" id="order_size" type="number" max="10" min="1" value="1">
+                  <div class="btn-number">-</div>
+                </div>
+                <button class="btn btn-submit" type="submit">أطلب الآن</button>
+                <button class="btn btn-add" type="submit">اضف إلى السلة</button>
             </div>
+          </div>
+          <div class="form-group">
+            <p class="total_price">1500 دج</p>
           </div>
         </form>
       </div>
-      <div class="images">
-        <img src="public/img/Placeholder Image.png" alt="">
+
+      <div class="product-page_image">
+        <div class="main-image">
+          <img class="main" src="public/img/Placeholder Image.png" alt="avatar holder">
+        </div>
+        <div class="image-swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="public/img/Placeholder Image.png" alt="" class="">
+            </div>
+            <div class="swiper-slide">
+              <img src="public/img/Placeholder Image.png" alt="" class="">
+            </div>
+            <div class="swiper-slide">
+              <img src="public/img/Placeholder Image.png" alt="" class="">
+            </div>
+            <div class="swiper-slide">
+              <img src="public/img/Placeholder Image.png" alt="" class="">
+            </div>
+            <div class="swiper-slide">
+              <img src="public/img/Placeholder Image.png" alt="" class="">
+            </div>
+            <div class="swiper-slide">
+              <img src="public/img/Placeholder Image.png" alt="" class="">
+            </div>
+          </div>
+          <div class="swiper-button-prev prev-img" aria-label="Previous slide"></div>
+          <div class="swiper-button-next next-img" aria-label="Next slide"></div>
+        </div>
       </div>
-    </div>
+    </section>
+    <section class="product-description">
+      <h2>وصف المنتج</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum pariatur reprehenderit fugiat exercitationem, minus, natus quo voluptatem minima cum hic ex temporibus ab, laboriosam dolore voluptas fuga praesentium vel amet accusantium saepe quas. Necessitatibus natus iste error, illum dolore reiciendis earum officiis, dolorem unde ducimus consequatur neque, architecto rerum dignissimos?</p>
+    </section>
+  </div>
    </main>
     <footer class="footer">
       <div class="wrapper">
@@ -135,8 +169,7 @@
         <div class="rights">©2025. All rights reserved.</div>
       </div>
     </footer>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="src/script.js"></script>
+    <script type="module" src="src/script.js"></script>
   
   </body>
 </html>

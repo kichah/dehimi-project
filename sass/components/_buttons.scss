@@ -4,7 +4,7 @@
   &-cta {
     color: var(--clr-primary-300);
     background-color: var(--clr-accent-300);
-    border: 1px solid var(--clr-primary-300);
+    border: 1px solid var(--clr-accent-300);
     font-size: var(--fs-400);
     font-weight: 500;
     transition: all 0.3s ease;
@@ -27,5 +27,20 @@
     padding: 0.5rem 0;
     margin-top: 1rem;
     font-size: var(--fs-300);
+  }
+  &-submit {
+    color: var(--clr-primary-300);
+    background-color: var(--clr-accent-300);
+    border: 1px solid var(--clr-accent-300);
+    border-radius: 4px;
+  }
+  &-add {
+    color: var(--clr-secondary-300);
+    background-color: transparent;
+    border: 1px solid var(--clr-secondary-300);
+    border-radius: 4px;
+  }
+  &-number {
+    font-size: 2rem;
   }
 }

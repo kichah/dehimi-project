@@ -1,4 +1,4 @@
-import Swiper from './+esm.js';
+import Swiper from '/public/swiper/swiper-bundle.min.mjs';
 const primaryNav = document.querySelector('#primary-navigation');
 const navToggle = document.querySelector('.icons');
 const close = document.querySelector('.fa-x');
@@ -16,7 +16,7 @@ if (navToggle) {
 }
 const mainPage = document.querySelector('.main-page');
 if (mainPage) {
-  const swiper = new Swiper('.product-slider', {
+  const swiperProducts = new Swiper('.product-slider', {
     slidesPerView: 2,
     spaceBetween: 8,
     loop: true,
@@ -48,7 +48,7 @@ if (mainPage) {
     },
   });
 
-  const swiper2 = new Swiper('.testimonial', {
+  const swiperTestimonials = new Swiper('.testimonial', {
     slidesPerView: 1,
     spaceBetween: 8, // Add space between slides
     breakpoints: {
@@ -70,3 +70,35 @@ if (mainPage) {
     },
   });
 }
+
+const swiperProductPage = new Swiper('.image-swiper', {
+  slidesPerView: 2,
+  spaceBetween: 8,
+  loop: true,
+  navigation: {
+    nextEl: '.next-img',
+    prevEl: '.prev-img',
+  },
+  breakpoints: {
+    // Responsive breakpoints
+    320: {
+      // when window width is >= 320px
+      slidesPerView: 2,
+      spaceBetween: 8,
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 12,
+    },
+    800: {
+      // when window width is >= 320px
+      slidesPerView: 4,
+      spaceBetween: 16,
+    },
+    1040: {
+      // when window width is >= 768px
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
