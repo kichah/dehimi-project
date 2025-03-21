@@ -72,7 +72,7 @@ if (mainPage) {
 }
 
 const swiperProductPage = new Swiper('.image-swiper', {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 8,
   loop: true,
   navigation: {
@@ -81,19 +81,10 @@ const swiperProductPage = new Swiper('.image-swiper', {
   },
   breakpoints: {
     // Responsive breakpoints
-    320: {
-      // when window width is >= 320px
-      slidesPerView: 2,
-      spaceBetween: 8,
-    },
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 12,
-    },
-    800: {
-      // when window width is >= 320px
+    720: {
+      // when window width is >= 768px
       slidesPerView: 4,
-      spaceBetween: 16,
+      spaceBetween: 8,
     },
     1040: {
       // when window width is >= 768px

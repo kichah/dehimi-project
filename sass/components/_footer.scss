@@ -6,7 +6,7 @@
   &-wrapper {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--clr-accent-2-300);
+    border-bottom: 1px solid var(--clr-accent-300);
     padding-bottom: clamp(0.5rem, 2%, 1rem);
   }
   &-content {

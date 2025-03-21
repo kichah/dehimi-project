@@ -17,15 +17,16 @@
   --clr-secondary-100: hsl(145, 27%, 41%);
   --clr-secondary-300: hsl(145, 37%, 26%);
   --clr-secondary-500: hsl(145, 55%, 21%);
-  --clr-accent-100: hsl(8, 80%, 64%);
-  --clr-accent-300: hsl(8, 80%, 56%);
-  --clr-accent-500: hsl(8, 80%, 44%);
-  --clr-accent-2-100: hsl(207, 90%, 28%);
-  --clr-accent-2-300: hsl(207, 91%, 9%);
-  --clr-accent-2-500: hsl(207, 90%, 4%);
+  --clr-accent-m-100: hsl(8, 80%, 64%);
+  --clr-accent-m-300: hsl(8, 80%, 56%);
+  --clr-accent-m-500: hsl(8, 80%, 44%);
+  --clr-accent-100: hsl(207, 90%, 28%);
+  --clr-accent-300: hsl(207, 91%, 9%);
+  --clr-accent-500: hsl(207, 90%, 4%);
   --fs-300: 0.9rem;
   --fs-400: 1rem;
   --fs-500: 1.125rem;
+  --fs-550: 1.4rem;
   --fs-600: 2rem;
   --fs-700: 2.8rem;
   --fs-icon: 1.2rem;
@@ -36,6 +37,7 @@
     --fs-300: 0.9rem;
     --fs-400: 1rem;
     --fs-500: 1.125rem;
+    --fs-550: 1.75rem;
     --fs-600: 2rem;
     --fs-700: 3rem;
     --fs-icon: 1.2rem;
@@ -259,8 +261,8 @@ i {
 }
 .btn-submit {
   color: var(--clr-primary-300);
-  background-color: var(--clr-accent-300);
-  border: 1px solid var(--clr-accent-300);
+  background-color: var(--clr-secondary-300);
+  border: 1px solid var(--clr-secondary-300);
   border-radius: 4px;
 }
 .btn-add {
@@ -318,7 +320,7 @@ i {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--clr-accent-2-300);
+  border-bottom: 1px solid var(--clr-accent-300);
   padding-bottom: clamp(0.5rem, 2%, 1rem);
 }
 .footer-content {
@@ -418,11 +420,10 @@ address {
 }
 
 .form {
-  padding: 1rem 0;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: clamp(0.5rem, 4vw, 2rem);
 }
 .form-heading {
   font-size: var(--fs-500);
@@ -431,12 +432,12 @@ address {
 .form select {
   border-radius: 0.25rem;
   border: 1px solid #d9d9d9;
-  padding: 0.8rem 1.6rem;
+  padding: clamp(0.4rem, 2%, 0.8rem) clamp(0.8rem, 3.5%, 1.6rem);
   font-size: inherit;
 }
 .form input:focus-visible,
 .form select:focus-visible {
-  outline-color: var(--clr-accent-2-100);
+  outline-color: var(--clr-accent-100);
 }
 .form-group {
   font-size: var(--fs-500);
@@ -464,12 +465,13 @@ address {
 .form .order {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  width: min-content;
 }
 .form .order input {
   text-align: center;
   border: none;
   background-color: inherit;
+  width: 50px;
 }
 .form .order input:focus-visible {
   border: none;
@@ -480,28 +482,14 @@ address {
   margin: 0;
 }
 
-/*
-  &-order {
-    width: 100%;
-    display: flex;
-    button {
-      flex: 1;
-    }
+@media (max-width: 45em) {
+  .form {
+    gap: 1.5rem;
   }
-  .order {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-left: 0.75rem;
-    input {
-      text-align: center;
-      border: none;
-      width: 2rem;
-      &:focus-visible {
-        border: none;
-      }
-    }
-  }*/
+  .form h3 {
+    margin-bottom: 0.5rem;
+  }
+}
 .section {
   padding: clamp(5rem, 12%, 6.3rem) 0;
   border-bottom: 1px solid #aaa;
@@ -567,7 +555,7 @@ address {
   padding: clamp(3rem, 10%, 5rem) 0;
 }
 .page-title {
-  border-bottom: 1px solid var(--clr-accent-2-300);
+  border-bottom: 1px solid var(--clr-accent-300);
 }
 .page-title h1 {
   font-size: var(--fs-600);
@@ -587,9 +575,9 @@ address {
 }
 .product-page {
   display: grid;
-  --gap: 4rem;
+  --gap: clamp(2rem, 4vw, 4rem);
   grid-template-columns: repeat(2, minmax(calc(50% - var(--gap)), 1fr));
-  padding: clamp(5rem, 12%, 6.3rem) 1rem;
+  padding: clamp(4rem, 9%, 6.3rem) 1rem;
   gap: var(--gap);
 }
 .product-page h1 {
@@ -598,7 +586,7 @@ address {
 .product-page_description {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: clamp(0.4rem, 2%, 0.8rem);
 }
 .product-page_image {
   display: flex;
@@ -607,13 +595,44 @@ address {
   gap: 1rem;
 }
 .product-page_image .main {
-  aspect-ratio: 3/2.1;
+  aspect-ratio: 1;
 }
 
+.product-description {
+  margin-bottom: clamp(5rem, 10%, 6.3rem);
+}
 .product-description > h2 {
   font-size: var(--fs-550);
+  display: inline;
+  margin-left: 2rem;
+}
+.product-description p {
+  font-size: var(--fs-500);
 }
 
+@media (max-width: 65em) {
+  .product-page {
+    grid-template-columns: 1fr 55%;
+    --gap: 1rem;
+  }
+}
+@media (max-width: 45em) {
+  .product-page {
+    padding: clamp(4rem, 9%, 6.3rem) 0;
+    grid-template-columns: 100%;
+    grid-template-areas: "image" "body";
+    --gap: 1rem;
+  }
+  .product-page_image {
+    grid-area: image;
+  }
+  .product-page_image .main {
+    display: none;
+  }
+  .product-page_description {
+    gap: 1.5rem;
+  }
+}
 .category-page {
   padding: clamp(5rem, 10%, 6.5rem) 0;
 }
