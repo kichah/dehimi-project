@@ -29,6 +29,8 @@
     font-size: var(--fs-550);
     display: inline;
     margin-left: 2rem;
+    color: #aaa;
+    cursor: pointer;
   }
   p {
     font-size: var(--fs-500);
@@ -63,4 +65,15 @@
   .product-page_description {
     gap: 1.5rem;
   }
+}
+
+.active {
+  color: var(--clr-secondary-300) !important;
+}
+.option {
+  display: none !important;
+}
+
+.pd-s {
+  padding-top: clamp(1rem, 2vw, 3rem);
 }

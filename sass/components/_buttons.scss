@@ -1,6 +1,8 @@
 .btn {
   cursor: pointer;
   font-family: 'El Messiri', sans-serif;
+  font-size: var(--fs-300);
+
   &-cta {
     color: var(--clr-primary-300);
     background-color: var(--clr-accent-300);
@@ -26,19 +28,41 @@
     color: var(--clr-primary-300);
     padding: 0.5rem 0;
     margin-top: 1rem;
-    font-size: var(--fs-300);
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: var(--clr-secondary-500);
+    }
+    &:active {
+      background-color: var(--clr-secondary-100);
+    }
   }
   &-submit {
     color: var(--clr-primary-300);
     background-color: var(--clr-secondary-300);
     border: 1px solid var(--clr-secondary-300);
     border-radius: 4px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: var(--clr-secondary-500);
+    }
+    &:active {
+      background-color: var(--clr-secondary-100);
+    }
   }
   &-add {
     color: var(--clr-secondary-300);
     background-color: transparent;
     border: 1px solid var(--clr-secondary-300);
     border-radius: 4px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #fff;
+      color: var(--clr-secondary-500);
+    }
+    &:active {
+      background-color: #fff;
+    }
   }
   &-number {
     font-size: 2rem;

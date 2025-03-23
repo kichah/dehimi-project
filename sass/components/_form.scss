@@ -17,6 +17,9 @@
       outline-color: var(--clr-accent-100);
     }
   }
+  select {
+    padding: clamp(0.6rem, 2%, 1rem) clamp(1rem, 3.5%, 1.8rem);
+  }
   // form-groups
   &-group {
     font-size: var(--fs-500);

@@ -9,7 +9,7 @@
   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 />
     <link rel="stylesheet" href="/css/style.css" />
-    <!-- <script src="https://kit.fontawesome.com/c036ef1898.js" crossorigin="anonymous"></script> -->
+     <script src="https://kit.fontawesome.com/c036ef1898.js" crossorigin="anonymous"></script>
     <title>Dehimi Organic Store</title>
   </head>
   <body>
@@ -18,12 +18,12 @@
       <a href="#" class="logo">
         <img class="logo" src="/public/img/Color = Dark.png"></img>
       </a>
-      <button aria-expanded="false" class="icons" aria-controls="primary-navigation">
+      <button  aria-expanded="false" class="icons" aria-controls="primary-navigation">
         <span class="sr-only">Menu</span>
         <i class="bx bx-menu " id="menu-icon"></i>
         <i class="bx bx-x hidden" id="close-icon"></i>
       </button>
-      <nav class="navbar hide" id="primary-navigation" >
+      <nav aria-hidden="true" class="navbar hide" id="primary-navigation" >
         <ul class="nav-links">
           <li>
             <a href="#">الصفحة الرئيسة</a>
@@ -47,7 +47,7 @@
           <i class="fa-solid fa-cart-shopping"></i>        </a>
       </div>
     </header>
-   <main >
+   <main id="product-page">
     <div class="wrapper">
     <section class="product-page">
       <div class="product-page_description">
@@ -125,9 +125,65 @@
       </div>
     </section>
     <section class="product-description">
-      <h2>وصف المنتج</h2>
-      <h2>أراء عملائنا</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum pariatur reprehenderit fugiat exercitationem, minus, natus quo voluptatem minima cum hic ex temporibus ab, laboriosam dolore voluptas fuga praesentium vel amet accusantium saepe quas. Necessitatibus natus iste error, illum dolore reiciendis earum officiis, dolorem unde ducimus consequatur neque, architecto rerum dignissimos?</p>
+      <h2 class="option-1 active">وصف المنتج</h2>
+      <h2 class="option-2">أراء عملائنا</h2>
+      <div class="pd-s">
+        <p class="the-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum pariatur reprehenderit fugiat exercitationem, minus, natus quo voluptatem minima cum hic ex temporibus ab, laboriosam dolore voluptas fuga praesentium vel amet accusantium saepe quas. Necessitatibus natus iste error, illum dolore reiciendis earum officiis, dolorem unde ducimus consequatur neque, architecto rerum dignissimos?
+        </p>
+        <div class="swiper product-testimonial option testimonial">
+          <div class="swiper-wrapper">
+            <div class="testimonial-card swiper-slide">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="testimonial-text">
+                منتجات دهيمي غيرت روتين العناية ببشرتي. أنصح بها لكل من يبحث عن الجودة!
+              </div>
+              <div class="testimonial-client">
+                <div class="avatar"><img src="/public/img/Avatar Image.png" alt=""></div>
+                <div class="client-name">tofi kichah</div>
+              </div>
+            </div>
+            <div class="testimonial-card swiper-slide">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam corporis odit, sint tenetur rem in odio voluptatum nam optio.
+              </div>
+              <div class="testimonial-client">
+                <div class="avatar"><img src="/public/img/Avatar Image.png" alt=""></div>
+                <div class="client-name">tofi kichah</div>
+              </div>
+            </div>
+            <div class="testimonial-card swiper-slide">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam corporis odit, sint tenetur rem in odio voluptatum nam optio.
+              </div>
+              <div class="testimonial-client">
+                <div class="avatar"><img src="/public/img/Avatar Image.png" alt=""></div>
+                <div class="client-name">tofi kichah</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
     </section>
   </div>
    </main>
