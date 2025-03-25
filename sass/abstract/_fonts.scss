@@ -21,7 +21,7 @@ $fonts: (
       600: 2rem,
       700: 3rem,
       icon: 1.2rem,
-      badge: 2rem,
+      badge: 1.7rem,
     ),
   //1040px and above large
   large:
@@ -40,11 +40,10 @@ $fonts: (
       // icons
       icon: 1.4rem,
       // badge text
-      badge: 2.5rem
+      badge: 2rem
     )
 );
 //when it is under the break points
-
 @font-face {
   font-family: 'El Messiri';
   src: url('/public/fonts/El_Messiri/ElMessiri-VariableFont_wght.ttf');

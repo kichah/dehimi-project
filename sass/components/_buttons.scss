@@ -9,13 +9,12 @@
     border: 1px solid var(--clr-accent-300);
     font-size: var(--fs-400);
     font-weight: 500;
-    transition: all 0.3s ease;
     padding: 0.8rem 1.6rem;
     border-radius: 0.25rem;
-
+    transition: all 0.3s ease;
     &:hover {
       background-color: var(--clr-accent-500);
-      transform: scale(1.01);
+      transform: scale(1.1);
     }
     &:active {
       background-color: var(--clr-accent-100);
